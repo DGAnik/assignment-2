@@ -1,0 +1,334 @@
+/*-----------------------
+ google font work sans
+------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500&family=Work+Sans:wght@400;500&display=swap');
+/*--------------------------
+common styles or utilities
+---------------------------- */
+body{
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+}
+body img{
+  width: 100%;
+}
+.header{
+  background-color: rgba(255, 144, 14, 0.1);
+}
+.header-title{
+  font-weight: 700;
+  font-size: 45px;
+  color: #131313;
+}
+.header-title h2{
+  margin: 0;
+}
+.title-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 50px;
+}
+nav>ul{
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+}
+nav>ul>li{
+  list-style: none;
+  font-weight: 500;
+  font-size: 18px;
+  color: #424242;
+}
+.banner-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 100px 250px;
+}
+.banner-title{
+  font-weight: 700;
+  font-size: 64px;
+}
+.banner-detail{
+  color: #727272;
+  font-weight: 400;
+  font-size: 16px;
+}
+.banner-title {
+  margin: 0;
+  text-align: center;
+}
+.banner img{
+  transform: scale(0.9);
+}
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec-detail{
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+}
+
+/*--------------------------- 
+features---first container
+----------------------------- */
+
+.container-1{
+  display: flex;
+  gap: 70px;
+  align-items: center;
+  margin-top: 130px;
+}
+.grid-images{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px;
+}
+.grid-images img{
+  width: 342px;
+  border-radius: 5px;
+}
+.features-title{
+  font-weight: 700;
+  font-size: 45px;
+}
+.features-title span{
+  color: #FF900E;
+}
+
+.features-button{
+  background-color: #FF900E;
+  border: none;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 20px 25px;
+  border-radius: 8px;
+  color: #FFFFFF;
+}
+
+/*---------------------------------------
+loving and enjoyable features section
+----------------------------------------- */
+.container-2{
+  display: flex;
+  align-items: center;
+  gap: 150px;
+  margin-top: 130px;
+}
+
+.lovely-features-title{
+  font-weight: 700;
+  font-size: 45px;
+  color: #131313;
+  border-left: 5px solid #FF900E ;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.lovely-features-detail{
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+}
+.lovely-feature{
+  background: #FFFFFF;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  padding: 20px 30px;
+}
+.subsec-title{
+  font-weight: 600;
+  font-size: 20px;
+  color: #131313;
+}
+.container-2 img{
+  width: 700px;
+  margin-bottom: 50px;
+}
+.experience-button{
+  background: #FF900E;
+  border-radius: 8px;
+  padding: 45px;
+  border: none;
+  position: relative;
+  top: -160px;
+  left: 50px;
+}
+.experience-button h2{
+  font-weight: 700;
+  font-size: 65px;
+  margin: 0;
+  color: #FFFFFF;
+}
+.experience-button p{
+  font-weight: 500;
+  font-size: 25px;
+  margin: 0;
+  color: #FFFFFF;
+}
+
+/*--------------------
+some facts section
+---------------------- */
+.section-title{
+  font-weight: 700;
+  font-size: 45px;
+  margin: 0;
+  color: #131313;
+}
+
+.boxs{
+  display: flex;
+  gap: 125px;
+  margin: 100px 20px 150px 20px;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid #FF900E;
+  border-radius: 8px;
+  padding: 20px 30px;
+}
+.box:hover{
+  transform: rotate(360deg);
+  transition: transform 3s linear 0.4s ;
+
+}
+.box img{
+  width: 45.22px;
+}
+.box h2{
+  font-weight: 600;
+  font-size: 45px;
+  color: #424242;
+  margin: 0;
+}
+.box p{
+  font-weight: 600;
+  font-size: 20px;
+  color: #727272;
+  margin: 0;
+}
+
+/*------------------
+Sponsors section
+-------------------- */
+.sponsors{
+  margin-bottom: 130px;
+}
+.sponsors h2,p{
+  text-align: center;
+}
+.sponsor-images{
+  display: flex;
+  gap: 70px;
+  margin-top: 50px;
+}
+.sponsor-images img{
+  width: 152.51px;
+}
+
+/*-----------------
+footer section 
+-------------------*/
+footer{
+  background: #FFF4E7;
+  border-radius: 15px;
+  padding: 5px 150px;
+  margin: 0 200px 130px 200px;
+}
+footer p{
+  font-weight: 400;
+  font-size: 20px;
+  color: #424242;
+}
+
+
+/*-------------------------------------------------------
+responsive for small devices(mobile)(max-width: 688px)
+--------------------------------------------------------- */
+@media screen and (max-width: 688px) {
+
+/*------------------
+header section
+--------------------*/
+.banner img{
+  display: none;
+}
+.banner-info{
+  margin: 0;
+  padding: 0;
+}
+.title-nav{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+nav>ul{
+  flex-direction: column;
+}
+
+  /*--------------------------- 
+features---first container
+----------------------------- */
+  .container-1{
+    flex-direction: column;
+  }
+  .features-detail{
+    text-align: justify;
+  }
+  .grid-images{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*---------------------------------------
+loving and enjoyable features section
+----------------------------------------- */
+.container-2{
+  flex-direction: column-reverse;
+  gap: 0;
+}
+.container-2 img{
+  width: 100%;
+  margin-bottom: 50px;
+}
+.experience-button{
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+.some-facts{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.boxs{
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+/*-----------------
+sponsors section
+------------------- */
+.sponsor-images{
+flex-direction: column;
+align-items: center;
+}
+footer{
+  padding: 5px 0;
+  margin: 0;
+}
+}
